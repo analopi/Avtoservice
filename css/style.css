@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1166px;
+    margin: 0 auto;
+}
+
+.promo {
+    position: relative;
+    height: 777px;
+    background: url(../img/main_bg.png) center center/cover no-repeat;
+}
+
+.promo .promo__links {
+    position: absolute;
+    bottom: 0;
+    right: 386px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 302px;
+    height: 83px;
+    background: #D9D9D9;
+}
+
+.promo .promo__links a {
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.promo .promo__links a::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: black;
+    transition: 0.3s;
+  }
+  
+  .promo .promo__links a:hover::after {
+    width: 100%;
+  }
+
+.divider {
+    margin: 0 6px;
+    height: 20px;
+    width: 2px;
+    background: #000000;
+}
+
+h1 {
+    display: inline-block;
+    margin: 420px 0 0;
+    font-weight: 700;
+    font-size: 70px;
+    color: #FFFFFF;
+}
+
+.services {
+    margin-top: 66px;
+}
+
+.services .services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services .services__list .services__item {
+    margin: 0 18px 45px 0;
+    width: 271px;
+    height: 317px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    box-shadow: 1px 6px 12px rgba(0, 0, 0, 0.13);
+    border-radius: 33px;
+    transition: all 0.3s;
+}
+
+.services .services__list .services__item:hover {
+    box-shadow: 1px 6px 60px #13EA1C;
+}
+
+.services .services__list .services__item:hover .services__icon {
+    background: rgba(19, 234, 28, 0.58);
+}
+
+.services .services__list .services__item .services__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 33px 33px 0 0;
+    background: rgba(125, 127, 201, 0.58);
+    height: 188px;
+    transition: all 0.3s;
+}
+
+.services .services__list .services__item .services__title {
+    margin: 0 auto;
+    width: 240px;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: #000000;
+}
+
+.services .services__list .services__active-item {
+    box-shadow: 1px 6px 60px #13EA1C;
+}
+
+.services .services__list .services__item .services__active-icon {
+    background: rgba(19, 234, 28, 0.58);
+}
