@@ -65,7 +65,9 @@ h1 {
 .services {
     margin-top: 66px;
 }
-
+.services__list{
+    position: relative;
+}
 .services .services__list {
     display: flex;
     flex-wrap: wrap;
@@ -120,4 +122,11 @@ h1 {
 
 .services .services__list .services__item .services__active-icon {
     background: rgba(19, 234, 28, 0.58);
+}
+.next {
+    position: absolute;
+    top:100%;
+    right: 1px;
+    width: 20px;
+    height: 20px;
 }
