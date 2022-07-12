@@ -89,6 +89,7 @@ h1 {
     transition: all 0.3s;
 }
 
+@media (hover: hover) {
 .services .services__list .services__item:hover {
     box-shadow: 1px 6px 60px #13EA1C;
 }
@@ -96,7 +97,7 @@ h1 {
 .services .services__list .services__item:hover .services__icon {
     background: rgba(19, 234, 28, 0.58);
 }
-
+}
 .services .services__list .services__item .services__icon {
     display: flex;
     justify-content: center;
@@ -213,7 +214,4 @@ h1 {
         font-size: 10px;
     }
 
-    .no-hover {
-        pointer-events: none;
-    }
 }
