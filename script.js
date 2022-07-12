@@ -3,6 +3,7 @@ for (let i = 0; i < elements.length; i++) {
     elements[i].onclick = function() {
         elements[i].classList.toggle('services__active-item');
         elements[i].querySelector('.services__icon').classList.toggle('services__active-icon');
+        elements[i].classList.add('no-hover');
     }
 }
 /* Индекс слайда по умолчанию */
