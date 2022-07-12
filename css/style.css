@@ -5,20 +5,23 @@
 }
 
 .container {
+    position: relative;
     max-width: 1166px;
+    height: 100%;
     margin: 0 auto;
 }
 
 .promo {
-    position: relative;
+    /* position: relative; */
     height: 777px;
     background: url(../img/main_bg.png) center center/cover no-repeat;
 }
 
 .promo .promo__links {
     position: absolute;
+    float: right;
     bottom: 0;
-    right: 386px;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +59,7 @@
 
 h1 {
     display: inline-block;
-    margin: 420px 0 0;
+    margin: 420px 0 0 0;
     font-weight: 700;
     font-size: 70px;
     color: #FFFFFF;
@@ -73,10 +76,11 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 18px;
 }
 
 .services .services__list .services__item {
-    margin: 0 18px 45px 0;
+    margin: 0 0 43px 0;
     width: 271px;
     height: 317px;
     border: 1px solid rgba(0, 0, 0, 0.11);
@@ -130,14 +134,86 @@ h1 {
 .services .services__list .services__item .services__active-icon {
     background: rgba(19, 234, 28, 0.58);
 }
-.next {
-    position: absolute;
-    top: 47%;
-    right: -15%;
+.services .next {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     cursor: pointer;
 }
 
 .next img {
     width: 60px;
     height: 60px;
+}
+
+@media screen and (max-width: 1200px) { 
+    .services .services__list .services__item {
+        margin-bottom: 20px;
+    }
+
+    .container {
+        max-width: 1100px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .promo {
+        height: 178px;
+    }
+    
+    h1 {
+        margin: 54px 0 60px 0;
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        font-size: 32px;
+    }
+
+    .promo .promo__links {
+        width: 290px;
+        height: 39px;
+        left: 50%;
+        bottom: -10%;
+        transform: translateX(-50%);
+    }
+
+    .promo .promo__links a {
+        font-size: 14px;
+    }
+
+    .services {
+        margin-top: 31px;
+    }
+
+    .services .services__list .services__item {
+        width: 133px;
+        height: 155px;
+        border-radius: 33px;
+    }
+
+    .services .services__list .services__item .services__icon {
+        height: 92px;
+    }
+
+    .services .services__list .services__item .services__icon img {
+       width: 47px;
+       height: 47px;
+    }
+
+    .services .services__list .services__item .services__title {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .no-hover {
+        pointer-events: none;
+    }
 }
