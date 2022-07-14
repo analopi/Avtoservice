@@ -1,30 +1,19 @@
 
 const elements = document.querySelectorAll('.services__item');
-const aboba = document.querySelectorAll('.services__tooltips');
 const submitBtn = document.querySelector('.submit');
-let a = true
-function abs(){
-    debugger;
-    a = false
-    e(a)
-}
-function e(a) {
-    debugger;
-    if (a) {
-        for (let i = 0; i < elements.length; i++) {
-                elements[i].classList.toggle('services__active-item');
-                elements[i].querySelector('.services__icon').classList.toggle('services__active-icon');
-                submitBtn.classList.add('active');
-                const activeElements = document.querySelectorAll('.services__active-item');
-                if (activeElements.length > 5 || activeElements.length === 0) {
-                    submitBtn.classList.remove('active');
-                }
+
+for (let i = 0; i < elements.length; i++) {
+    elements[i].onclick = function() {
+        elements[i].classList.toggle('services__active-item');
+        elements[i].querySelector('.services__icon').classList.toggle('services__active-icon');
+        submitBtn.classList.add('active');
+        const activeElements = document.querySelectorAll('.services__active-item');
+        if (activeElements.length > 5 || activeElements.length === 0) {
+            submitBtn.classList.remove('active');
         }
     }
-    else {
-        a = true
-    } 
 }
+
 // /* Индекс слайда по умолчанию */
 // var slideIndex = 1;
 // showSlides(slideIndex);
