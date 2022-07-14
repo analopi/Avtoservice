@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,56 +11,95 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
-        <main>
-            <section class="promo">
-                <div class="container">
-                    <h1>Услуги</h1>
-                    <div class="promo__links">
-                        <a href="#">Главная</a>
-                        <div class="divider"></div>
-                        <a href="#">Услуги</a>
-                    </div>
-                </div>
-            </section>
+
+    <main>
+        <section class="promo">
             <div class="container">
-                <section class="services">
-                    <div class="services__list">
-                        <div class="services__item" onclick="e(true)">
-                            <div class="services__icon" >
+                <h1>Услуги</h1>
+                <div class="promo__links">
+                    <a href="#">Главная</a>
+                    <div class="divider"></div>
+                    <a href="#">Услуги</a>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section class="services">
+                <div class="services__list">
+                    <div class="services__wrapper">
+                        <div class="services__tooltips"
+                            data-title="Диагностика поломки на высокоточном европейском оборудовании
+                            Под компьютерной диагностикой понимают процесс считывания спецкодов неисправностей и ошибок с ключевых транспортных узлов. Компьютерная диагностика позволяет обнаруживать и считывать даже небольшие изменения в работе двигателя, трансмиссии, приборной спецпанели. Проведенная на качественном оборудовании диагностика поможет максимально точно обозначить проблему, для того, чтобы ее быстро и эффективно устранили специалисты своего профиля."
+                            tabindex="1" onclick="abs()">
+                            <img src="img/hello.svg" alt="">
+                        </div>
+                        <div class="services__item">
+                            <div class="services__icon">
                                 <img src="img/services/computer.svg" alt="computer">
-                            </div>
-                            <div class="services__tooltips" data-title="asofjoiajmfoijaoisf kjoaiofsjkopiajkfopiaj" tabindex="1" onclick="abs()">
-                                <img src="img/hello.svg" alt="" >
                             </div>
                             <div class="services__title">
                                 Диагностика поломки на высокоуровневом европейском оборудовании
                             </div>
+                        </div>
+                    </div>
+                    <div class="services__wrapper">
+                        <div class="services__tooltips"
+                            data-title="Ремонт предполагает полную разборку двигателя с учетом его снятия с автомобиля. Поршневые кольца, вкладыши, как правило, так же меняются при полной разборке. Работы по капитальному ремонту двигателя выполняется при критическом износе деталей ДВС, который привел к повреждению цлиндров, постелей и другихэлементов ДВС в результате чего двигатель заклинило или не проворачивается коленвал - работа двигателя невозможна."
+                            tabindex="1" onclick="abs()">
+                            <img src="img/hello.svg" alt="">
                         </div>
                         <div class="services__item">
                             <div class="services__icon">
                                 <img src="img/services/gears.svg" alt="computer">
                             </div>
                             <div class="services__title">
-                                Ремонт<br/>двигателя
+                                Ремонт<br />двигателя
                             </div>
+                        </div>
+                    </div>
+                    <div class="services__wrapper">
+                        <div class="services__tooltips"
+                            data-title="Понять, что ходовка требует помощи мастера, можно по нарушению её работы и нехарактерном шуме в процессе езды. Стоит понимать, что этот узел состоит из множества деталей, и если хоть одна из них выйдет из строя, то это влечёт нарушение в работе всей системы. Поэтому нельзя игнорировать тревожные сигналы, обязательно"
+                            tabindex="1" onclick="abs()">
+                            <img src="img/hello.svg" alt="">
                         </div>
                         <div class="services__item">
                             <div class="services__icon">
                                 <img src="img/services/car.svg" alt="computer">
                             </div>
                             <div class="services__title">
-                                Ремонт<br/>ходовой
+                                Ремонт<br />ходовой
                             </div>
+                        </div>
+                    </div>
+                    <div class="services__wrapper">
+                        <div class="services__tooltips"
+                            data-title="Ремонт предполагает полную разборку двигателя с учетом его снятия с автомобиля. Поршневые кольца, вкладыши, как правило, так же меняются при полной разборке. Работы по капитальному ремонту двигателя выполняется при критическом износе деталей ДВС, который привел к повреждению цлиндров, постелей и другихэлементов ДВС в результате чего двигатель заклинило или не проворачивается коленвал - работа двигателя невозможна."
+                            tabindex="1" onclick="abs()">
+                            <img src="img/hello.svg" alt="">
                         </div>
                         <div class="services__item">
                             <div class="services__icon">
                                 <img src="img/services/engine.svg" alt="computer">
                             </div>
                             <div class="services__title">
-                                Капитальный<br/>ремонт ДВС
+                                Капитальный<br />ремонт ДВС
                             </div>
+                        </div>
+                    </div>
+                    <div class="services__wrapper">
+                        <div class="services__tooltips"
+                            data-title="Основные неисправности, характерные для МКПП:
+                            При переключении или во время работы КП издает посторонний шум;
+                            Трудное переключение передачи;
+                            Отсутствие возможности включить передачу или же всех сразу;
+                            Передачи выключаются (вылетают) самостоятельно;
+                            Протечка масла, понижение уровня масла в коробке.
+                            Все неисправности Вы можете починить в АвтоHelp. При проведении планового ТО и ремонтамонта необходимы специальные инструменты и механизма которые позволят выполнить ремонт. Автосервис обладает этим всем. Плюс ко всему, даже малейшая ошибка в процессе ремонта и настройки приведет к непоправимым последствиям, а в случае с МКПП к фатальным, поскольку это очень сложная система."
+                            tabindex="1" onclick="abs()">
+                            <img src="img/hello.svg" alt="">
                         </div>
                         <div class="services__item">
                             <div class="services__icon">
@@ -69,6 +109,13 @@
                                 Капитальный ремонт МКПП
                             </div>
                         </div>
+                    </div>
+                    <div class="services__wrapper">
+                        <div class="services__tooltips" data-title="Кондиционер автомашины - это агрегат, который создает и поддерживает внутри авто выбранный климат.
+                            Это оборудование, как и прочее, нужно вовремя обслуживать. Для поддержания в деятельном виде нужно время от времени дозаправлять кондиционер автомашины, чистить механизм кондиционирования, а еще прочие процессы, которые предотвращают его неисправность в дальнейшем.
+                            " tabindex="1" onclick="abs()">
+                            <img src="img/hello.svg" alt="">
+                        </div>
                         <div class="services__item">
                             <div class="services__icon">
                                 <img src="img/services/gears.svg" alt="computer">
@@ -77,21 +124,43 @@
                                 Заправка кондиционера
                             </div>
                         </div>
+                    </div>
+                    <div class="services__wrapper">
+                        <div class="services__tooltips"
+                            data-title="Диагностика поломки на высокоточном европейском оборудовании
+                        Под компьютерной диагностикой понимают процесс считывания спецкодов неисправностей и ошибок с ключевых транспортных узлов. Компьютерная диагностика позволяет обнаруживать и считывать даже небольшие изменения в работе двигателя, трансмиссии, приборной спецпанели. Проведенная на качественном оборудовании диагностика поможет максимально точно обозначить проблему, для того, чтобы ее быстро и эффективно устранили специалисты своего профиля."
+                            tabindex="1" onclick="abs()">
+                            <img src="img/hello.svg" alt="">
+                        </div>
                         <div class="services__item">
                             <div class="services__icon">
                                 <img src="img/services/bulb.svg" alt="computer">
                             </div>
                             <div class="services__title">
-                                Замена<br/>лампочек
+                                Замена<br />лампочек
                             </div>
+                        </div>
+                    </div>
+                    <div class="services__wrapper">
+                        <div class="services__tooltips"
+                            data-title="Смена смазочной жидкости мотора, замена масляного фильтра (обычного или для дизеля — тонкой и грубой очистки), промывка силового агрегата при необходимости. Все эти операции выполняются при проведении обслуживания автомобиля. Стоит отметить, что смена моторного масла в движке может быть плановая или внеплановая."
+                            tabindex="1" onclick="abs()">
+                            <img src="img/hello.svg" alt="">
                         </div>
                         <div class="services__item">
                             <div class="services__icon">
                                 <img src="img/services/oil.svg" alt="computer">
                             </div>
                             <div class="services__title">
-                                Замена масла<br/>ДВС
+                                Замена масла<br />ДВС
                             </div>
+                        </div>
+                    </div>
+                    <div class="services__wrapper">
+                        <div class="services__tooltips"
+                            data-title="Сварочные работы заключаются в восстановлении изношенных деталей наплавкой металла, сварке деталей, заварке трещин в рамах грузовых автомобилей, крыльях и металлической облицовке кузова."
+                            tabindex="1" onclick="abs()">
+                            <img src="img/hello.svg" alt="">
                         </div>
                         <div class="services__item">
                             <div class="services__icon">
@@ -101,6 +170,14 @@
                                 Сварочный работы
                             </div>
                         </div>
+                    </div>
+                    <div class="services__wrapper">
+                        <div class="services__tooltips"
+                            data-title="Диагностика поломки на высокоточном европейском оборудовании
+                            Под компьютерной диагностикой понимают процесс считывания спецкодов неисправностей и ошибок с ключевых транспортных узлов. Компьютерная диагностика позволяет обнаруживать и считывать даже небольшие изменения в работе двигателя, трансмиссии, приборной спецпанели. Проведенная на качественном оборудовании диагностика поможет максимально точно обозначить проблему, для того, чтобы ее быстро и эффективно устранили специалисты своего профиля."
+                            tabindex="1" onclick="abs()">
+                            <img src="img/hello.svg" alt="">
+                        </div>
                         <div class="services__item">
                             <div class="services__icon">
                                 <img src="img/services/computer_check.svg" alt="computer">
@@ -109,21 +186,42 @@
                                 Диагностика компьютерная
                             </div>
                         </div>
+                    </div>
+                    <div class="services__wrapper">
+                        <div class="services__tooltips" data-title="Диагностика ходовой части автомобиля включает в себя проверку состояния колес и шин, амортизаторов, развал-схождение, состояние подвески передней и задней, подшипников ступиц. После пробега в 10-15 тыс. км., при неравномерном износе шин, выполняют балансировку колес.
+                            " tabindex="1" onclick="abs()">
+                            <img src="img/hello.svg" alt="">
+                        </div>
                         <div class="services__item">
                             <div class="services__icon">
                                 <img src="img/services/diagnosis.svg" alt="computer">
                             </div>
                             <div class="services__title">
-                                Диагностика<br/>ходовой части
+                                Диагностика<br />ходовой части
                             </div>
+                        </div>
+                    </div>
+                    <div class="services__wrapper">
+                        <div class="services__tooltips"
+                            data-title="Тормозные колодки — это расходник. За время службы колодки не только сильно стачиваются, но и неоднократно перегреваются, отчего материал, из которого они сделаны, твердеет, теряя свои свойства. Соответственно, колодки хуже выполняют свою функцию, машина хуже тормозит."
+                            tabindex="1" onclick="abs()">
+                            <img src="img/hello.svg" alt="">
                         </div>
                         <div class="services__item">
                             <div class="services__icon">
                                 <img src="img/services/brake.svg" alt="computer">
                             </div>
                             <div class="services__title">
-                                Замена<br/>тормозных<br/>колодок
+                                Замена<br />тормозных<br />колодок
                             </div>
+                        </div>
+                    </div>
+                    <div class="services__wrapper">
+                        <div class="services__tooltips"
+                            data-title="Диагностика поломки на высокоточном европейском оборудовании
+                        Под компьютерной диагностикой понимают процесс считывания спецкодов неисправностей и ошибок с ключевых транспортных узлов. Компьютерная диагностика позволяет обнаруживать и считывать даже небольшие изменения в работе двигателя, трансмиссии, приборной спецпанели. Проведенная на качественном оборудовании диагностика поможет максимально точно обозначить проблему, для того, чтобы ее быстро и эффективно устранили специалисты своего профиля."
+                            tabindex="1" onclick="abs()">
+                            <img src="img/hello.svg" alt="">
                         </div>
                         <div class="services__item">
                             <div class="services__icon">
@@ -133,13 +231,27 @@
                                 Замена тормозной жидкости
                             </div>
                         </div>
+                    </div>
+                    <div class="services__wrapper">
+                        <div class="services__tooltips"
+                            data-title="Промывка топливной системы, сама по себе способна устранить многие недостатки указываемые мотор – тестером и исключить ошибки, выдаваемые сканером. Начнём с того, что часть вопросов, возникающих после диагностики на приборах, просто исчезнут сами собой, достаточно просто промыть топливную систему."
+                            tabindex="1" onclick="abs()">
+                            <img src="img/hello.svg" alt="">
+                        </div>
                         <div class="services__item">
                             <div class="services__icon">
                                 <img src="img/services/oil2.svg" alt="computer">
                             </div>
                             <div class="services__title">
-                                Промывка<br/>топливной системы
+                                Промывка<br />топливной системы
                             </div>
+                        </div>
+                    </div>
+                    <div class="services__wrapper">
+                        <div class="services__tooltips"
+                            data-title="Для правильной работы системы охлаждения современного автомобиля требуется около 10 л охлаждающей жидкости. Сегодня, существует два наиболее распространённых вида охлаждающей жидкости: тосол и антифриз. По мнению автомобильных экспертов, наиболее подходящим является второй вид охлаждающей жидкости."
+                            tabindex="1" onclick="abs()">
+                            <img src="img/hello.svg" alt="">
                         </div>
                         <div class="services__item">
                             <div class="services__icon">
@@ -150,11 +262,13 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="submit"><img class="submit-icon" src="img/submit.svg" alt="submit"></a>
-                    <!-- <a class="next" onclick="plusSlide()"><img src="img/arrow.png" alt="arrow"></a> -->
+                </div>
+                <a href="#" class="submit"><img class="submit-icon" src="img/submit.svg" alt="submit"></a>
+                <!-- <a class="next" onclick="plusSlide()"><img src="img/arrow.png" alt="arrow"></a> -->
             </section>
         </div>
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
