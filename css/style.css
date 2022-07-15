@@ -66,6 +66,7 @@ h1 {
 }
 
 .services {
+    padding-bottom: 33px;
     position: relative;
     margin-top: 66px;
 }
@@ -88,14 +89,6 @@ h1 {
     border-radius: 33px;
     transition: all 0.3s;
 }
-
-/* .submit {
-    display: none;
-    justify-content: flex-end;
-    position: absolute;
-    bottom: 100px;
-    right: -134px;
-} */
 
 .submit {
     display: none;
@@ -197,20 +190,20 @@ h1 {
 .services__tooltips:before{
     display: block;
     position: absolute;
-    bottom: 50px;
-    left: -370%;
+    bottom: 55px;
+    left: -400%;
     margin-left: -100px;
     text-align: center;
     padding: 10px;
-    width: 516px;
+    width: 400px;
     max-height: 1000px;
-    color: black;
+    color: #000000;
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     background: rgba(207, 207, 207, 0.9);
     box-shadow: 0px 4px 49px rgba(0, 0, 0, 0.5);
-    
+    /* font-size: 20px; */
     content: attr(data-title);
     box-sizing: border-box;
     border-radius: 10px;
@@ -285,8 +278,8 @@ h1 {
         width: 90%;
     }
     .services__tooltips:before{
-        width: 180px;
-        font-size: 16px;
+        width: 380px;
+        font-size: 14px;
     }
 }
 
@@ -297,7 +290,7 @@ h1 {
     }
 
     .services .services__list .services__item .services__icon {
-        height: 125px;
+        height: 130px;
     }
 
     .services .services__list .services__item .services__icon img {
@@ -321,7 +314,7 @@ h1 {
         width: 80%;
     }
     .services__tooltips:before{
-        width: 160px;
+        width: 335px;
         font-size: 14px;
     }
 }
@@ -362,18 +355,23 @@ h1 {
     .services .services__list .services__item .services__title {
         font-size: 12px;
     }
-    .services__tooltips{
-        margin-top: 7px;
-        margin-right: -3px;
-    }
-    .services__tooltips img{
-        width: 60%;
-        
 
+    .services__tooltips{
+        width: 35px;
+        height: 35px;
+        margin-top: 9px;
+        margin-right: 3px;
     }
+
     .services__tooltips:before{
-        width: 140px;
-        font-size: 12px;
+        padding: 5px;
+        width: 210px;
+        font-size: 11px;
+        left: -140%;
+    }
+
+    .submit {
+        margin-top: 23px;
     }
 
 }
@@ -413,7 +411,7 @@ h1 {
     }
 
     .services .services__list .services__item .services__icon {
-        height: 92px;
+        height: 88px;
     }
 
     .services .services__list .services__item .services__icon img {
@@ -426,16 +424,15 @@ h1 {
         font-size: 10px;
     }
     .services__tooltips{
-        margin-top: 8px;
-        margin-right: -4px;
+        width: 32px;
+        height: 32px;
     }
-    .services__tooltips img{
-        width: 50%;
-    }
+
     .services__tooltips:before{
-        width: 275px;
+        width: 255px;
         font-size: 10px;
-        bottom: 40px;
+        left: -185%;
+        bottom: 45px;
     }
     .services__tooltips:focus::before{
         opacity: 1;
