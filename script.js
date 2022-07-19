@@ -1,11 +1,11 @@
 
-const elements = document.querySelectorAll('.services__item');
+const elements = document.querySelectorAll('.card__item');
 const submitBtn = document.querySelector('.submit');
 
 for (let i = 0; i < elements.length; i++) {
     elements[i].onclick = function() {
         elements[i].classList.toggle('services__active-item');
-        elements[i].querySelector('.services__icon').classList.toggle('services__active-icon');
+        elements[i].querySelector('.card__icon').classList.toggle('services__active-icon');
         submitBtn.classList.add('active');
         const activeElements = document.querySelectorAll('.services__active-item');
         if (activeElements.length > 5 || activeElements.length === 0) {

@@ -70,17 +70,17 @@ h1 {
     position: relative;
     margin-top: 66px;
 }
-.services__list{
+.card__list{
     position: relative;
 }
-.services .services__list {
+.card__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 18px;
 }
 
-.services .services__list .services__item {
+.card__list .card__item {
     position: relative;
     width: 271px;
     height: 317px;
@@ -107,21 +107,24 @@ h1 {
 
 
 @media (hover: hover) {
-    .services .services__list .services__item:hover {
+    .card__list .card__item:hover {
         box-shadow: 1px 6px 60px #13EA1C;
     }
 
-    .services .services__list .services__item:hover .services__icon {
+    .card__list .card__item:hover .card__icon {
         background: rgba(19, 234, 28, 0.58);
     }
-    .services__tooltips:hover::before{
+
+    .card__tooltips:hover::before{
         opacity: 1;
         visibility: visible;
     }
     
-
+    .distribution .distribution__form .distribution__submit:hover {
+        background: rgb(255, 154, 1);
+    }
 }
-.services .services__list .services__item .services__icon {
+.card__list .card__item .card__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +135,7 @@ h1 {
     transition: all 0.3s;
 }
 
-.services .services__list .services__item .services__title {
+.card__list .card__item .card__title {
     margin: 0 auto;
     width: 240px;
     height: 40%;
@@ -146,19 +149,19 @@ h1 {
     color: #000000;
 }
 
-.services .services__list .services__active-item {
+.card__list .services__active-item {
     box-shadow: 1px 6px 60px rgba(19, 234, 28, 0.7);
 
 }
 
-.services .services__list .services__active-item .services__title {
+.card__list .services__active-item .card__title {
     font-weight: 800;
 }
 
-.services .services__list .services__item .services__active-icon {
+.card__list .card__item .services__active-icon {
     background: rgba(19, 234, 28, 0.58);
 }
-.services .next {
+.next {
     width: 60px;
     height: 60px;
     display: flex;
@@ -172,7 +175,7 @@ h1 {
     height: 60px;
 }
 
-.services__tooltips{
+.card__tooltips{
     position: absolute;
     top: 0;
     right: 0;
@@ -182,12 +185,12 @@ h1 {
     z-index: 2;
 }
 
-.services__wrapper {
+.card__wrapper {
     position: relative;
     height: 100%;
 }
 
-.services__tooltips:before{
+.card__tooltips:before{
     display: block;
     position: absolute;
     bottom: 55px;
@@ -217,7 +220,7 @@ h1 {
     opacity: 0;
 
 }
-.services__tooltips:hover::before{
+.card__tooltips:hover::before{
     opacity: 1;
     visibility: visible;
 }
@@ -225,7 +228,7 @@ h1 {
 
 
 @media screen and (max-width: 1200px) { 
-    .services .services__list .services__item {
+    .card__list .card__item {
         /* margin-bottom: 20px; */
     }
 
@@ -251,54 +254,54 @@ h1 {
         font-size: 18px;
     }
 
-    .services .services__list .services__item {
+    .card__list .card__item {
         width: 223px;
         height: 245px;
         border-radius: 33px;
     }
 
-    .services .services__list .services__item .services__icon {
+    .card__list .card__item .card__icon {
         height: 140px;
     }
 
-    .services .services__list .services__item .services__icon img {
+    .card__list .card__item .card__icon img {
        width: 80px;
        height: 80px;
     }
 
-    .services .services__list .services__item .services__title {
+    .card__list .card__item .card__title {
         width: 90%;
         font-size: 15px;
     }
-    .services__tooltips{
+    .card__tooltips{
         margin-top: 7px;
         margin-right: 7px;
     }
-    .services__tooltips img{
+    .card__tooltips img{
         width: 90%;
     }
-    .services__tooltips:before{
+    .card__tooltips:before{
         width: 380px;
         font-size: 14px;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .services .services__list .services__item {
+    .card__list .card__item {
         width: 203px;
         height: 225px;
     }
 
-    .services .services__list .services__item .services__icon {
+    .card__list .card__item .card__icon {
         height: 130px;
     }
 
-    .services .services__list .services__item .services__icon img {
+    .card__list .card__item .card__icon img {
        width: 73px;
        height: 73px;
     }
 
-    .services .services__list .services__item .services__title {
+    .card__list .card__item .card__title {
         font-size: 14px;
     }
 
@@ -306,14 +309,14 @@ h1 {
         width: 66px;
         height: 66px;
     }
-    .services__tooltips{
+    .card__tooltips{
         margin-top: 8px;
         margin-right: 3px;
     }
-    .services__tooltips img{
+    .card__tooltips img{
         width: 80%;
     }
-    .services__tooltips:before{
+    .card__tooltips:before{
         width: 335px;
         font-size: 14px;
     }
@@ -338,32 +341,32 @@ h1 {
         margin: 154px 0 60px 70px;
     }
 
-    .services .services__list .services__item {
+    .card__list .card__item {
         width: 163px;
         height: 185px;
     }
 
-    .services .services__list .services__item .services__icon {
+    .card__list .card__item .card__icon {
         height: 102px;
     }
 
-    .services .services__list .services__item .services__icon img {
+    .card__list .card__item .card__icon img {
        width: 57px;
        height: 57px;
     }
 
-    .services .services__list .services__item .services__title {
+    .card__list .card__item .card__title {
         font-size: 12px;
     }
 
-    .services__tooltips{
+    .card__tooltips{
         width: 35px;
         height: 35px;
         margin-top: 9px;
         margin-right: 3px;
     }
 
-    .services__tooltips:before{
+    .card__tooltips:before{
         padding: 5px;
         width: 210px;
         font-size: 11px;
@@ -404,37 +407,165 @@ h1 {
         margin-top: 31px;
     }
 
-    .services .services__list .services__item {
+    .card__list .card__item {
         width: 133px;
         height: 155px;
         border-radius: 33px;
     }
 
-    .services .services__list .services__item .services__icon {
+    .card__list .card__item .card__icon {
         height: 88px;
     }
 
-    .services .services__list .services__item .services__icon img {
+    .card__list .card__item .card__icon img {
        width: 47px;
        height: 47px;
     }
 
-    .services .services__list .services__item .services__title {
+    .card__list .card__item .card__title {
         width: 100%;
         font-size: 10px;
     }
-    .services__tooltips{
+    .card__tooltips{
         width: 32px;
         height: 32px;
     }
 
-    .services__tooltips:before{
+    .card__tooltips:before{
         width: 255px;
         font-size: 10px;
         left: -185%;
         bottom: 45px;
     }
-    .services__tooltips:focus::before{
+    .card__tooltips:focus::before{
         opacity: 1;
     }
+}
+
+.offers {
+    text-align: center;
+}
+
+.offers__bg {
+    width: 100%;
+    height: 313px;
+    background: url(../img/offers_bg.png) center center/cover no-repeat;
+}
+
+.distribution {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 108px auto 52px auto;
+    align-items: center;
+    padding: 28px 14px 30px 14px;
+    width: 543px;
+    height: 518px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.distribution .distribution__title {
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    line-height: 160%;
+    color: #000000;
+}
+
+.distribution .distribution__form {
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+    margin-top: 30px;
+}
+
+.distribution .distribution__form .distribution__input {
+    padding: 0 15px;
+    font-size: 26px;
+    height: 84px;
+    background: #D3C3C3;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 31px;
+}
+
+.distribution .distribution__form .distribution__input::placeholder {
+    text-align: center;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 84px;
+    color: #7F7272;
+}
+
+.distribution .distribution__form .distribution__submit {
+    cursor: pointer;
+    height: 84px;
+    background: rgba(255, 153, 0, 0.75);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    border: none;
+    font-weight: 400;
+    font-size: 38px;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+    transition: all 0.3s;
+}
+
+.distribution .distribution__not-now {
+    font-weight: 400;
+    font-size: 28px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.distribution .distribution__tooltips {
+    font-size: 24px;
+}
+
+.distribution__tooltips:before {
+    width: 457px;
+    bottom: 65px;
+}
+
+.subscribe {
+    display: inline-block;
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 28px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.subscribe::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: black;
+    transition: 0.3s;
+}
+  
+.subscribe:hover::after {
+    width: 100%;
+}
+
+.distribution__not-now::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: black;
+    transition: 0.3s;
+}
+
+.distribution__not-now:hover::after {
+    width: 100%;
+}
+
+.closed {
+    display: none;
 }
